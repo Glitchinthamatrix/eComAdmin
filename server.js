@@ -65,3 +65,7 @@ app.listen(PORT, (err) => {
         console.log('on port ', PORT)
     }
 })
+
+//random code generation
+a = 10000
+console.log(a)
