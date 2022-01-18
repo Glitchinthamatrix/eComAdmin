@@ -1,4 +1,3 @@
-//checking git commits
 import Topbar from "./components/Topbar/Topbar.jsx";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import "./app.css";
