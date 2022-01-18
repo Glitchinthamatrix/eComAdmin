@@ -1,4 +1,3 @@
-//checking branchhes with this comment
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -23,7 +22,7 @@ app.use((req, res, next) => {
     next()
 })
 
-//routes
+//routes in other files
 app.use('/categories', catRouter);
 app.use('/images', imageRouter);
 app.use('/products', productRouter);
@@ -47,6 +46,7 @@ app.get('/getCategories', (req, res) => {
             res.json({ error: e.message })
         })
 });
+
 //connection string
 var url = `mongodb+srv://Nitesh123:antarcticwolf123@cluster0.dyzrg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 connectDB(url);
