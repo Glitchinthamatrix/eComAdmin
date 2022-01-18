@@ -1,0 +1,44 @@
+.container {
+    flex: 4;
+}
+
+h3 {
+    display: block;
+}
+
+.imageUploadFormContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.imageUploadInput {
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.imageUploadButton {
+    margin-left: 10px;
+    height: 45px;
+    width: 100px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    padding: 7px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.imageUploadButton:hover {
+    background-color: rgba(224, 224, 224, 0.5);
+}
+
+.imageContainer {
+    margin-top: 50px;
+}

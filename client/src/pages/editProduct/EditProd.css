@@ -1,0 +1,42 @@
+.container {
+    flex: 4;
+    margin-top: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.flexChild {
+    flex: 50%;
+}
+
+.flexChild>.textField {
+    width: 80%;
+    color: black;
+    border-color: black;
+    margin: 5px 0px 20px 0px;
+}
+
+.flexChild>.textfield {
+    width: 30%;
+    color: black;
+    border-color: black;
+    margin: 5px 0px 20px 0px;
+}
+
+.textArea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgba(188, 206, 251);
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.4s all ease;
+}
+
+.marginBottom {
+    margin-bottom: 20px;
+}
