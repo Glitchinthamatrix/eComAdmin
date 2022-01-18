@@ -1,3 +1,4 @@
+//checking branchhes with this comment
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -14,7 +15,7 @@ const subCategoryRouter = require('./routes/subCategoryRouter.js');
 const PORT = process.env.PORT || 9000;
 const ARP = require('node-arp');
 
-//middlewares
+//middlewares used in this project
 app.use(cors());
 app.use(express.json());
 app.use((req, res, next) => {
