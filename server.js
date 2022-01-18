@@ -1,3 +1,4 @@
+//testing 
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -28,16 +29,18 @@ app.use('/images', imageRouter);
 app.use('/products', productRouter);
 app.use('/subCategories', subCategoryRouter);
 
-
-//in-server routes
+ 
+//in-server routes 
 app.get('/getCategories', (req, res) => {
     console.log('requset for all categories');
     Category.find({})
         .then((categories) => {
-            if (categories) {
+            if (categories) 
+            {
                 logInGreen("successfully served categories")
                 res.json({ status: "success", categories: categories });
-            } else {
+            } else
+             {
                 console.log("could not server categories")
                 res.json({ error: "Can't Get Categories" })
             }
