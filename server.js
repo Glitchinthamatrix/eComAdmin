@@ -29,18 +29,16 @@ app.use('/images', imageRouter);
 app.use('/products', productRouter);
 app.use('/subCategories', subCategoryRouter);
 
- 
+
 //in-server routes 
 app.get('/getCategories', (req, res) => {
     console.log('requset for all categories');
     Category.find({})
         .then((categories) => {
-            if (categories) 
-            {
+            if (categories) {
                 logInGreen("successfully served categories")
                 res.json({ status: "success", categories: categories });
-            } else
-             {
+            } else {
                 console.log("could not server categories")
                 res.json({ error: "Can't Get Categories" })
             }
@@ -70,4 +68,4 @@ app.listen(PORT, (err) => {
 
 //random code generation
 a = 10000
-console.log(a)
+console.log(a);
