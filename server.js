@@ -14,15 +14,16 @@ const subCategoryRouter = require('./routes/subCategoryRouter.js');
 const PORT = process.env.PORT || 9000;
 const ARP = require('node-arp');
 
-//middlewares used in this project
+//middlewares 
 app.use(cors());
 app.use(express.json());
 app.use((req, res, next) => {
     console.log(`Request in gatekeeper middleware==> ${req.method.toUpperCase()} ${req.url}; req.body: ${req.body?Object.keys(req.body)>0?Object.keys(req.body):'No':'no'} items; `)
     next()
-})
+});
 
-//routes in other files
+
+//routes
 app.use('/categories', catRouter);
 app.use('/images', imageRouter);
 app.use('/products', productRouter);
